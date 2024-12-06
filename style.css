@@ -1,0 +1,125 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* to Ensure the body and HTML take full viewport height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.background {
+    background-color: #12181b;
+    min-height: 100vh; /* Ensures background spans the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0; /* Adjusts padding to avoid white edges */
+}
+
+.color1 {
+    color: #fb825a; 
+}
+
+.color2 {
+    color: #6dccf5; 
+}
+
+.color3 {
+    color: #a5f766; 
+    text-shadow: #f5f2b7;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+/* scoreboard */
+.scoreboard {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #566983;
+    padding: 20px 50px;
+    border-radius: 15px;
+    border: 2px solid #f5f2b7;
+    box-shadow: 0 4px 15px rgba(211, 150, 136, 0.4);
+    width: 80%; 
+    max-width: 600px; 
+}
+
+.scoreboard p {
+    margin: 6px 0;
+}
+
+/* Display */
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px; /* Add spacing between tiles */
+    max-width: 300px;
+    width: 100%;
+}
+
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.tile:hover {
+    background-color: #1d2428;
+    color: white;
+}
+
+/* Player styles */
+.playerX {
+    color: #fbfb26;
+    background-color: #020201;
+}
+
+.playerO {
+    color: #0bc8f3;
+    background-color:#020201;
+}
+
+/* Controls and reset button */
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+#reset {
+    background-color: #f98ea4;
+    color: rgb(20, 3, 6);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor:grab;
+}
